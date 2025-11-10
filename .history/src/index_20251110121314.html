@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="nav__logo" href="#home">My Portfolio</a>
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+        </button>
+        <ul id="nav-menu" class="nav__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="hero">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Hi, I’m</p>
+          <h1 class="hero__title">Your Name</h1>
+          <p class="hero__subtitle">Product-focused software engineer crafting impactful digital experiences.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#projects">View Projects</a>
+            <a class="btn btn--ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero__media">
+          <div class="hero__avatar" aria-hidden="true">YN</div>
+        </div>
+      </section>
+      <section id="about" class="section section--alt">
+        <div class="section__inner">
+          <h2>About</h2>
+          <p>
+            I am a software engineer specializing in building accessible, human-centered products. With experience
+            spanning front-end development, design systems, and cross-functional collaboration, I thrive on delivering
+            thoughtful solutions that blend engineering excellence with design sensibility.
+          </p>
+          <p>
+            Outside of work, I enjoy mentoring aspiring developers, experimenting with creative coding, and sharing
+            knowledge through technical writing and talks.
+          </p>
+        </div>
+      </section>
+      <section id="skills" class="section">
+        <div class="section__inner">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <article class="card">
+              <h3>Languages</h3>
+              <ul>
+                <li>JavaScript / TypeScript</li>
+                <li>Python</li>
+                <li>HTML &amp; CSS</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Frameworks</h3>
+              <ul>
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Node.js</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Tools</h3>
+              <ul>
+                <li>Git &amp; GitHub</li>
+                <li>Figma</li>
+                <li>Jest &amp; Testing Library</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="section section--alt">
+        <div class="section__inner">
+          <h2>Experience</h2>
+          <div class="timeline">
+            <article class="timeline__item">
+              <header>
+                <h3>Senior Software Engineer · Acme Corp</h3>
+                <span class="timeline__date">2022 — Present</span>
+              </header>
+              <p>
+                Lead front-end initiatives for the company’s flagship analytics platform, partnering closely with design
+                and product to ship features used by 50K+ customers.
+              </p>
+              <ul>
+                <li>Developed a reusable component library adopted across three product teams.</li>
+                <li>Championed performance optimizations that improved load times by 40%.</li>
+              </ul>
+            </article>
+            <article class="timeline__item">
+              <header>
+                <h3>Software Engineer · Bright Labs</h3>
+                <span class="timeline__date">2019 — 2022</span>
+              </header>
+              <p>
+                Built customer-facing web applications and internal tooling, contributing to the company’s rapid growth
+                from seed to Series C.
+              </p>
+              <ul>
+                <li>Implemented an onboarding flow that increased activation rates by 25%.</li>
+                <li>Collaborated with data science to ship personalization experiments.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="section">
+        <div class="section__inner">
+          <h2>Projects</h2>
+          <div class="projects-grid">
+            <article class="card">
+              <h3>Project One</h3>
+              <p>
+                A project description that highlights impact, technologies, and outcomes. Keep it concise but informative.
+              </p>
+              <div class="card__links">
+                <a href="#" class="link">Live Demo</a>
+                <a href="#" class="link">GitHub</a>
+              </div>
+            </article>
+            <article class="card">
+              <h3>Project Two</h3>
+              <p>
+                Another notable project with a focus on what you delivered and how it benefited users or the business.
+              </p>
+              <div class="card__links">
+                <a href="#" class="link">Case Study</a>
+                <a href="#" class="link">GitHub</a>
+              </div>
+            </article>
+            <article class="card">
+              <h3>Project Three</h3>
+              <p>
+                Highlight your role, the stack, and the measurable results. Tailor descriptions to your target roles.
+              </p>
+              <div class="card__links">
+                <a href="#" class="link">Live Demo</a>
+                <a href="#" class="link">GitHub</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section section--alt">
+        <div class="section__inner contact">
+          <h2>Contact</h2>
+          <p>
+            I’m always interested in new opportunities, collaborations, and conversations. Drop me a note and I’ll get
+            back to you soon.
+          </p>
+          <a class="btn btn--primary" href="mailto:you@example.com">you@example.com</a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>&copy; <span id="current-year"></span> Your Name. All rights reserved.</p>
+        <div class="site-footer__links">
+          <a href="https://www.linkedin.com" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://github.com" aria-label="GitHub">GitHub</a>
+          <a href="https://twitter.com" aria-label="Twitter">Twitter</a>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
+

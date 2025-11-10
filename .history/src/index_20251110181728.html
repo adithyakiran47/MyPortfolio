@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="nav__logo" href="#home">Adithya Kiran V</a>
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+        </button>
+        <ul id="nav-menu" class="nav__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="hero">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Innovative Software Developer</p>
+          <h1 class="hero__title">Adithya Kiran V</h1>
+          <p class="hero__subtitle">
+            Chennai-based developer crafting MERN and cloud-powered experiences by day, and convincing caffeine that it’s
+            a debugging tool by night. I build products that feel as good as they function.
+          </p>
+          <ul class="hero__meta">
+            <li>Chennai, India</li>
+            <li><a href="mailto:adithya44kiran@gmail.com">adithya44kiran@gmail.com</a></li>
+          </ul>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#projects">View Projects</a>
+            <a class="btn btn--ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <figure class="hero__media">
+          <img class="hero__photo" src="assets/images/adithya-kiran.jpg" alt="Adithya Kiran V" loading="lazy" />
+          <div class="hero__avatar" aria-hidden="true">AK</div>
+        </figure>
+      </section>
+      <section id="about" class="section section--alt">
+        <div class="section__inner">
+          <h2>About</h2>
+          <p>
+            I am an innovative software developer who thrives on building efficient, user-focused applications. Translating
+            complex requirements into intuitive experiences is my kind of puzzle, especially when it comes with a strong cup
+            of filter coffee and a team that appreciates commit messages with personality.
+          </p>
+          <p>
+            Beyond code, I lead design initiatives on campus, and invest in continuous learning
+            across cloud, AI, and emerging technologies. I am currently pursuing a B.E. in Computer Science and Engineering
+            at SRM Easwari Engineering College, graduating in 2026 with a CGPA of 8.54.
+          </p>
+          <p>
+            I am equally passionate about storytelling through visuals. As a freelance photographer, videographer, editor,
+            and drone pilot, I partner with clients to capture events and craft cinematic narratives that amplify their
+            brand presence. This creative practice sharpens my eye for detail, elevates my design sensibility, and keeps me
+            grounded in the human side of digital experiences.
+          </p>
+        </div>
+      </section>
+      <section id="skills" class="section">
+        <div class="section__inner">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <article class="card">
+              <h3>Languages</h3>
+              <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML &amp; CSS</li>
+                <li>SQL</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Frameworks</h3>
+              <ul>
+                <li>MongoDB</li>
+                <li>Express.js</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Tools</h3>
+              <ul>
+                <li>VS Code</li>
+                <li>Power BI</li>
+                <li>AWS</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe Premiere Pro</li>
+                <li>Adobe After Effects</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Focus Areas</h3>
+              <ul>
+                <li>Responsive UI/UX Design</li>
+                <li>Real-time Web Applications</li>
+                <li>Cloud Foundations</li>
+                <li>Creative Production &amp; Drone Cinematography</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="education" class="section section--alt">
+        <div class="section__inner">
+          <h2>Education</h2>
+          <div class="education-list">
+            <article class="card card--horizontal">
+              <div>
+                <h3>SRM Easwari Engineering College · Chennai</h3>
+                <p class="card__meta">B.E. Computer Science and Engineering · Expected 2026</p>
+              </div>
+              <ul>
+                <li>CGPA: 8.54</li>
+                <li>Coursework: Data Structures, Web Technologies, Cloud Computing</li>
+              </ul>
+            </article>
+            <article class="card card--horizontal">
+              <div>
+                <h3>Don Bosco Matriculation Higher Secondary School · Chennai</h3>
+                <p class="card__meta">Higher Secondary Education · 2022</p>
+              </div>
+              <ul>
+                <li>Focus: Mathematics, Physics, Computer Science</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="section section--alt">
+        <div class="section__inner">
+          <h2>Experience</h2>
+          <div class="timeline">
+            <article class="timeline__item">
+              <header>
+                <h3>UI/UX Designer · Duhzine IT Solutions Pvt Ltd</h3>
+                <span class="timeline__date">Oct 2025 — Present</span>
+              </header>
+              <p>
+                Drive user-centered design for production web applications, partnering with cross-functional teams to
+                deliver polished experiences on tight timelines.
+              </p>
+              <ul>
+                <li>Delivered responsive interfaces aligned with business goals and brand guidelines.</li>
+                <li>Collaborated with MERN developers to translate prototypes into performant builds.</li>
+              </ul>
+            </article>
+            <article class="timeline__item">
+              <header>
+                <h3>Digital Head · Campus Life</h3>
+                <span class="timeline__date">2023 — Present</span>
+              </header>
+              <p>
+                Lead the digital branding for college events, ensuring cohesive visuals across print and online channels.
+              </p>
+              <ul>
+                <li>Designed promotional assets that increased event visibility and attendance.</li>
+                <li>Managed end-to-end execution of digital campaigns with student stakeholders.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="section">
+        <div class="section__inner">
+          <h2>Projects</h2>
+          <div class="projects-grid">
+            <article class="card">
+              <h3>HATS · Hybrid Application Tracking System</h3>
+              <p>
+                Automates repetitive job-application tasks for technical roles while preserving human oversight for
+                non-technical hiring, delivering a balanced and reliable recruitment workflow.
+              </p>
+              <div class="card__links">
+                <a href="https://hats-project.vercel.app/dashboard" class="link" target="_blank" rel="noopener noreferrer"
+                  >Live Demo</a
+                >
+                <a href="https://github.com/adithyakiran47/hats-project" class="link" target="_blank" rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </div>
+            </article>
+            <article class="card">
+              <h3>Lensverse</h3>
+              <p>
+                Event coverage booking platform connecting clients with photographers and videographers, featuring
+                real-time scheduling, booking flows, and adaptive UI.
+              </p>
+              <div class="card__links">
+                <a href="https://lensverseproject.vercel.app/" class="link" target="_blank" rel="noopener noreferrer"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/adithyakiran47/lensverseproject"
+                  class="link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </div>
+            </article>
+            <article class="card">
+              <h3>Job Sync</h3>
+              <p>
+                Job connection platform built with Oracle APEX, linking employers and job seekers with tracking and
+                listing capabilities for streamlined hiring.
+              </p>
+              <div class="card__links">
+                <a href="#" class="link">Case Study</a>
+                <a href="https://www.linkedin.com/in/adithya-kiran-v-786484257/details/projects/" class="link">GitHub</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="achievements" class="section section--alt">
+        <div class="section__inner">
+          <h2>Achievements</h2>
+          <article class="card">
+            <h3>Top 30 Finalist · Oracle APEX Hackathon 2024</h3>
+            <p>
+              Designed and developed a recruitment portal that connected job seekers with recruiters. Focused on a clean
+              interface, real-time tracking, and measurable user impact.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Freelance Creative Storyteller</h3>
+            <p>
+              Deliver end-to-end photography, videography, editing, and aerial footage for events and brands. Blend
+              technical precision with artistic direction to produce polished assets that resonate across digital channels.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section id="courses" class="section">
+        <div class="section__inner">
+          <h2>Courses &amp; Certifications</h2>
+          <div class="skills-grid">
+            <article class="card">
+              <h3>Cloud &amp; Platforms</h3>
+              <ul>
+                <li>AWS Certified Cloud Practitioner</li>
+                <li>Introduction to IoT (Elite + Silver) · NPTEL</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Development</h3>
+              <ul>
+                <li>Web Development Specialization · GUVI</li>
+                <li>Generative AI Foundations Certificate</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section section--alt">
+        <div class="section__inner contact">
+          <h2>Contact</h2>
+          <p>
+            I am always interested in new opportunities, collaborations, and conversations around software development,
+            UI/UX, and cloud engineering. Send a note and I will get back to you soon.
+          </p>
+          <div class="contact__links">
+            <a class="btn btn--primary" href="mailto:adithya44kiran@gmail.com">adithya44kiran@gmail.com</a>
+            <a class="btn btn--ghost" href="https://www.linkedin.com/in/adithya-kiran-v-786484257/" target="_blank" rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a class="btn btn--ghost" href="https://github.com/adithyakiran47" target="_blank" rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>&copy; <span id="current-year"></span> Adithya Kiran V. All rights reserved.</p>
+        <div class="site-footer__links">
+          <a href="https://www.linkedin.com/in/adithyakiranv" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://github.com/adithya44kiran" aria-label="GitHub">GitHub</a>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
+
