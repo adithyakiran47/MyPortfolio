@@ -184,7 +184,7 @@ video {
   align-items: center;
   position: relative;
   padding: 1.25rem;
-  min-height: clamp(280px, 35vw, 360px);
+  min-height: clamp(220px, 28vw, 300px);
   margin: 0 auto;
 }
 
@@ -203,9 +203,9 @@ video {
   z-index: 1;
   display: block;
   width: clamp(220px, 28vw, 280px);
-  height: clamp(280px, 35vw, 360px);
+  height: clamp(220px, 28vw, 280px);
   object-fit: cover;
-  object-position: center 25%;
+  object-position: 50% 20%;
   border-radius: 32px;
   border: 1px solid rgba(56, 189, 248, 0.3);
   box-shadow: 0 25px 45px rgba(2, 6, 23, 0.45);
@@ -594,9 +594,8 @@ video {
 
   .hero__photo {
     width: clamp(200px, 70vw, 260px);
-    height: clamp(260px, 85vw, 320px);
+    height: clamp(200px, 70vw, 260px);
     border-radius: 26px;
-    object-position: center 25%;
   }
 
   .btn {

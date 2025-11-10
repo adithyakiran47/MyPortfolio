@@ -184,7 +184,7 @@ video {
   align-items: center;
   position: relative;
   padding: 1.25rem;
-  min-height: clamp(280px, 35vw, 360px);
+  min-height: clamp(220px, 28vw, 300px);
   margin: 0 auto;
 }
 

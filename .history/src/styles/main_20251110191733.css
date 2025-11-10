@@ -184,7 +184,7 @@ video {
   align-items: center;
   position: relative;
   padding: 1.25rem;
-  min-height: clamp(280px, 35vw, 360px);
+  min-height: clamp(220px, 28vw, 300px);
   margin: 0 auto;
 }
 
@@ -594,9 +594,8 @@ video {
 
   .hero__photo {
     width: clamp(200px, 70vw, 260px);
-    height: clamp(260px, 85vw, 320px);
+    height: clamp(200px, 70vw, 260px);
     border-radius: 26px;
-    object-position: center 25%;
   }
 
   .btn {
