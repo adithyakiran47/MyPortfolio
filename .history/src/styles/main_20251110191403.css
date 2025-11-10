@@ -499,12 +499,6 @@ video {
     padding-bottom: 0;
     margin-bottom: 0.75rem;
     min-height: auto;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .hero__photo {
-    margin: 0 auto;
   }
 }
 
