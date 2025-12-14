@@ -22,6 +22,27 @@ if (navToggle && navLinks) {
   });
 }
 
+// Scroll Reveal Animation
+const observerOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target); // Only animate once
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('section').forEach(section => {
+  section.classList.add('reveal-section');
+  observer.observe(section);
+});
+
 if (currentYear) {
   currentYear.textContent = String(new Date().getFullYear());
 }
@@ -109,7 +130,8 @@ if (particleCanvas && particleCanvas.getContext) {
       }
 
       context.beginPath();
-      context.fillStyle = `rgba(56, 189, 248, ${particle.opacity})`;
+      // Neon Cyan
+      context.fillStyle = `rgba(0, 240, 255, ${particle.opacity})`;
       context.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
       context.fill();
 
@@ -122,7 +144,8 @@ if (particleCanvas && particleCanvas.getContext) {
         if (distanceSq < maxDistanceSq) {
           const distance = Math.sqrt(distanceSq);
           const alpha = Math.max(0, 1 - distance / maxDistance) * 0.35;
-          context.strokeStyle = `rgba(56, 189, 248, ${alpha})`;
+          // Neon Cyan lines
+          context.strokeStyle = `rgba(0, 240, 255, ${alpha})`;
           context.lineWidth = 0.6;
           context.beginPath();
           context.moveTo(particle.x, particle.y);
