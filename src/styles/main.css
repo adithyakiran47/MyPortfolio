@@ -546,14 +546,14 @@ video {
   color: var(--color-neon-cyan);
 }
 
-/* Canvas / Particles */
-#particle-canvas {
-  position: fixed;
-  inset: 0;
-  z-index: -2;
-  opacity: 0.3;
-  pointer-events: none;
+/* Stacking Context */
+main,
+.site-footer {
+  position: relative;
+  z-index: 1;
 }
+
+
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
